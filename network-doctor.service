@@ -1,0 +1,15 @@
+[Unit]
+Description=Network Doctor - Wi-Fi connectivity self-healer
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/network-doctor daemon
+Restart=always
+RestartSec=5
+Environment=CHECK_INTERVAL_SEC=30
+Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+[Install]
+WantedBy=multi-user.target
