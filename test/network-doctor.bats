@@ -208,7 +208,13 @@ EOF
 }
 
 @test "handles NetworkManager not running" {
-  mock_command "nmcli" "Error: NetworkManager is not running." 1
+  # nmcli writes errors to stderr, which nm_state redirects to /dev/null
+  cat > "$TEST_DIR/nmcli" << 'EOF'
+#!/bin/bash
+echo "Error: NetworkManager is not running." >&2
+exit 1
+EOF
+  chmod +x "$TEST_DIR/nmcli"
 
   run nm_state
   [ "$output" = "" ]

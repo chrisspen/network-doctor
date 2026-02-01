@@ -37,6 +37,7 @@ fi
 
 # Create temporary directory for gh-pages content
 PAGES_DIR=$(mktemp -d)
+# shellcheck disable=SC2064  # We want $PAGES_DIR expanded now, not at signal time
 trap "rm -rf $PAGES_DIR" EXIT
 
 echo "Preparing APT repository in $PAGES_DIR..."
