@@ -38,9 +38,9 @@ jobs:
 
       - name: Build .deb package
         run: |
-          VERSION=test ./build-deb.sh
+          VERSION=0.0.0-test ./build-deb.sh
 
       - name: Verify package
         run: |
-          dpkg-deb --info dist/network-doctor_test_all.deb
-          dpkg-deb --contents dist/network-doctor_test_all.deb
+          dpkg-deb --info dist/network-doctor_0.0.0-test_all.deb
+          dpkg-deb --contents dist/network-doctor_0.0.0-test_all.deb
