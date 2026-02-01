@@ -1,3 +1,6 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
 Origin: network-doctor
 Label: network-doctor
 Suite: stable
@@ -13,3 +16,10 @@ MD5Sum:
 SHA256:
  706b62da2e7000239dee17e9cb2b518c99c254b661ea0e543ce677ec3c9762c6 654 Packages
  418a4fdb9f35eeb15802497b2f36c8b87778b33a2b5cfbf32c68bc8393d5af12 451 Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQT7l4pUFE3gLhFfJBCosDrwJBH1pgUCaX+IyAAKCRCosDrwJBH1
+pgf4AP9QI8ga+lw8V06t7bbqzXQaZwFWkivTsIrD/FhoXx0rPgD/RakesHupXgNk
+KVOw7fq+p7g5RMF2D3JxzhDpFyS/iA0=
+=aqrA
+-----END PGP SIGNATURE-----

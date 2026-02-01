@@ -14,8 +14,11 @@
     <p>Wi-Fi connectivity self-healer for NetworkManager on Ubuntu/Debian.</p>
 
     <h2>Installation</h2>
-    <pre><code># Add repository (unsigned)
-echo "deb [trusted=yes] https://chrisspen.github.io/network-doctor ./" | sudo tee /etc/apt/sources.list.d/network-doctor.list
+    <pre><code># Add GPG key
+curl -fsSL https://chrisspen.github.io/network-doctor/KEY.gpg | sudo gpg --dearmor -o /usr/share/keyrings/network-doctor.gpg
+
+# Add repository
+echo "deb [signed-by=/usr/share/keyrings/network-doctor.gpg] https://chrisspen.github.io/network-doctor ./" | sudo tee /etc/apt/sources.list.d/network-doctor.list
 
 # Install
 sudo apt update
@@ -28,6 +31,6 @@ sudo apt install network-doctor</code></pre>
     <h2>Direct Download</h2>
     <p><a href="network-doctor_1.0.0_all.deb">network-doctor_1.0.0_all.deb</a></p>
 
-    <p><small>Version: 1.0.0 | Built: 2026-02-01 16:41 UTC</small></p>
+    <p><small>Version: 1.0.0 | Built: 2026-02-01 17:09 UTC</small></p>
 </body>
 </html>
