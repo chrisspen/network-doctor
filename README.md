@@ -13,13 +13,39 @@ A systemd service that monitors NetworkManager connectivity and automatically re
 1. **Soft recovery**: `nmcli connection up` / `nmcli device reconnect`
 2. **Hard recovery**: USB device reset (for driver/firmware hangs) - optional
 
-## Install
+## Install from APT (recommended)
+
+```bash
+# Add GPG key
+curl -fsSL https://chrisspen.github.io/network-doctor/KEY.gpg | sudo gpg --dearmor -o /usr/share/keyrings/network-doctor.gpg
+
+# Add repository
+echo "deb [signed-by=/usr/share/keyrings/network-doctor.gpg] https://chrisspen.github.io/network-doctor ./" | sudo tee /etc/apt/sources.list.d/network-doctor.list
+
+# Install
+sudo apt update
+sudo apt install network-doctor
+```
+
+To update:
+
+```bash
+sudo apt update && sudo apt upgrade
+```
+
+To uninstall:
+
+```bash
+sudo apt remove network-doctor
+```
+
+## Install from source
 
 ```bash
 ./install.sh
 ```
 
-## Uninstall
+To uninstall:
 
 ```bash
 ./uninstall.sh
