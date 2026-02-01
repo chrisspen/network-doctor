@@ -2,14 +2,14 @@ Origin: network-doctor
 Label: network-doctor
 Suite: stable
 Codename: stable
-Version: 1.0.0
+Version: 1.0.1
 Architectures: all amd64 arm64 armhf
 Components: main
 Description: Network Doctor APT Repository
-Date: Sun, 01 Feb 2026 17:09:10 +0000
+Date: Sun, 01 Feb 2026 18:13:27 +0000
 MD5Sum:
- 5f5a05dc4b4b2cc0fb726bc51f7c56d2 654 Packages
- a7fbef9006f898017113b640dd93ca88 451 Packages.gz
+ 64ce41d485cec88d0024199d9a746818 654 Packages
+ 50e9a731f36831014699390537ce9202 454 Packages.gz
 SHA256:
- 706b62da2e7000239dee17e9cb2b518c99c254b661ea0e543ce677ec3c9762c6 654 Packages
- 418a4fdb9f35eeb15802497b2f36c8b87778b33a2b5cfbf32c68bc8393d5af12 451 Packages.gz
+ 29f2e6ee522e7037f8f923898f94bf314d2af94bf6a6a35ed0f622bca6b9422c 654 Packages
+ 263cfeda641dc64e2850c5b6199dd993c4df6cf922812ac3111a36fbce71b5d6 454 Packages.gz

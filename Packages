@@ -1,13 +1,13 @@
 Package: network-doctor
-Version: 1.0.0
+Version: 1.0.1
 Architecture: all
 Maintainer: Chris <chris@localhost>
 Depends: bash, network-manager
-Filename: ./network-doctor_1.0.0_all.deb
-Size: 3826
-MD5sum: 02f08e6bd0b16fd3e0b42a72d21c71f6
-SHA1: 7c836aa7eeca358b3e35ba5d52e9a94065ebd924
-SHA256: f43637289ce1049bcd8f4b0d9cca60b1ce0bde92c435956bee9561de9388e424
+Filename: ./network-doctor_1.0.1_all.deb
+Size: 3832
+MD5sum: 03651fb8058dffded8b3866b84b7ec52
+SHA1: d661c28489126b350abbb98c91bfc4349de00774
+SHA256: d6dc94e9372360ce81de134a8c4bd3d57ac4f6ac8b354a1c369e9024f7f987bb
 Section: net
 Priority: optional
 Homepage: https://github.com/chris/network-doctor
