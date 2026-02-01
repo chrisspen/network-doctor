@@ -45,7 +45,8 @@ cat > "${PKG_DIR}/DEBIAN/postinst" << 'EOF'
 set -e
 systemctl daemon-reload
 systemctl enable network-doctor.service
-echo "network-doctor installed. Start with: sudo systemctl start network-doctor"
+systemctl start network-doctor.service
+echo "network-doctor installed and running."
 echo "Configure with: sudo systemctl edit network-doctor.service"
 EOF
 chmod 755 "${PKG_DIR}/DEBIAN/postinst"
