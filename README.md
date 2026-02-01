@@ -1,5 +1,7 @@
 # Network Doctor
 
+[![CI](https://github.com/chrisspen/network-doctor/actions/workflows/ci.yml/badge.svg)](https://github.com/chrisspen/network-doctor/actions/workflows/ci.yml)
+
 A systemd service that monitors NetworkManager connectivity and automatically recovers from WiFi failures.
 
 ## What it does
