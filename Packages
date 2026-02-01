@@ -1,0 +1,18 @@
+Package: network-doctor
+Version: 1.0.0
+Architecture: all
+Maintainer: Chris <chris@localhost>
+Depends: bash, network-manager
+Filename: ./network-doctor_1.0.0_all.deb
+Size: 3826
+MD5sum: 02f08e6bd0b16fd3e0b42a72d21c71f6
+SHA1: 7c836aa7eeca358b3e35ba5d52e9a94065ebd924
+SHA256: f43637289ce1049bcd8f4b0d9cca60b1ce0bde92c435956bee9561de9388e424
+Section: net
+Priority: optional
+Homepage: https://github.com/chris/network-doctor
+Description: Wi-Fi connectivity self-healer for NetworkManager
+ Monitors NetworkManager connectivity and automatically recovers
+ from WiFi failures using soft recovery (nmcli reconnect) and
+ optional hard recovery (USB device reset).
+
